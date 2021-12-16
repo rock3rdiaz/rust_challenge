@@ -24,7 +24,8 @@ fn get_balance(input: &mut String) -> i8 {
 }
 
 fn main() {
-    let mut input: String = String::from("()(()");
+    let mut input: String = String::from("((((((((()");
+    println!("initial input {}", input);
     let balance = get_balance(&mut input);
     println!("balance is {}, text is {}", balance, input);
 }
